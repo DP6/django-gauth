@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+    <head>
+        {% block meta %}
+            <meta charset="UTF-8">
+            <meta http-equiv="Content-type" content="text/html; charset=utf-8" /> 
+            <meta http-equiv="Content-Language" content="pt-br" />
+        {% endblock %}
+
+        <title>{% block title %}Example - GAUTH{% endblock %}</title>
+
+        <!-- Style -->
+        {% block css %}
+        {% endblock %}
+        
+        <!-- JavaScript -->
+        {% block js %}
+        {% endblock %}  
+    </head>
+
+    <body>
+                <!-- Menu -->
+        <div id="menu">
+            <p>Menu:</p>
+            <ul>
+                <li id="menu_pageviews"><a href="/pageviews/">Page Views</a></li>
+            </ul>
+        </div>
+
+        <hr/>
+        <div id="content">
+            <br/>
+            {% block content %}{% endblock %}
+            <br/>
+        </div>
+        <hr/>
+        <div id="footer">OpenSource - Example gauth</div>
+
+    </body>
+</html>
