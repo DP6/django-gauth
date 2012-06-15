@@ -2,7 +2,7 @@
 from django.conf.urls.defaults import *
 
 
-urlpatterns = patterns('dashboard.core.views',
+urlpatterns = patterns('example.gauth.views',
     (r'^$','index'),
     (r'^authentication$','authentication'),
     (r'^auth-callback$','auth_callback'),
