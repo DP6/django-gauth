@@ -8,7 +8,7 @@ from gauth.models import CredentialsModel
 from gauth.models import FlowModel
 from oauth2client.django_orm import Storage
 from oauth2client.client import OAuth2WebServerFlow
-from settings import GA_ARGS
+from gauth_settings import GA_ARGS
 
 def index(request):
     return render_to_response('index.html', context_instance=RequestContext(request))
