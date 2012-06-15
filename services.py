@@ -5,7 +5,7 @@ from apiclient.discovery import build
 import httplib2
 from gauth.models import CredentialsModel
 from django.contrib.auth.models import User
-from settings import GA_ARGS, GA_FILTERS
+from gauth_settings import GA_ARGS, GA_FILTERS
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 import calendar
